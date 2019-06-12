@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:transitionName="share"
+        android:layout_marginTop="50dp"
+        android:id="@+id/image_location"
+        android:src="@drawable/icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/image_location"
+        android:textSize="40sp"
+        android:text="环保地图"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#96000000">
+            <EditText
+                android:gravity="center"
+                android:background="@drawable/login_shape"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="0dp"
+                android:hint="输入用户名"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:id="@+id/username_error_msg"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="270dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#96000000">
+            <EditText
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/login_shape"
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="0dp"
+                android:hint="输入密码"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:id="@+id/password_error_msg"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <at.markushi.ui.CircleButton
+        android:id="@+id/login"
+        android:src="@drawable/taiji_selector"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="115dp"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:cb_color="@android:color/white"
+        app:cb_pressedRingWidth="8dip"/>
+
+    <TextView
+        android:id="@+id/register_skip"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="65dp"
+        android:text="还没有账号？点击这里注册"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

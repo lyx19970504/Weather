@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@drawable/infowindow_shape"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/city_name"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="未来10天天气预报"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include layout="@layout/weather_item_layout"/>
+        <TextView
+            android:id="@+id/pop"
+            android:padding="10dp"
+            android:background="#FFCBDFEA"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+        <android.support.v7.widget.RecyclerView
+            android:background="#FFCBDFEA"
+            android:id="@+id/recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/days_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+    </LinearLayout>
+</ScrollView>

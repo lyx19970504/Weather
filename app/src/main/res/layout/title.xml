@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:fitsSystemWindows="true">
+
+    <Button
+        android:id="@+id/select_city"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/city"
+        android:layout_centerVertical="true"
+        android:onClick="jump_button"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/location"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/font_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/location" />
+    </LinearLayout>
+
+</RelativeLayout>

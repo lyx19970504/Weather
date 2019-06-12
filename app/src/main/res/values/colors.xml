@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bottom_bg">#FF5CC4FC</color>
+    <color name="font_color">#FFFFFF</color>
+    <color name="orange">#FFFFC721</color>
+    <color name="green">#00FF00</color>
+    <color name="mild_pollution">#FFF46F6F</color>
+    <color name="moderate_pollution">#e72929</color>
+    <color name="severe_pollution">#9e1414</color>
+    <color name="serious_pollution">#5b0c0c</color>
+    <color name="black">#000000</color>
+    <color name="view_color">#F0F0F0</color>
+</resources>

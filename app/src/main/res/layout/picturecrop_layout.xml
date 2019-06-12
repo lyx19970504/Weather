@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.fafu.polutionrepo.finished.View.PictureCropView
+        android:id="@+id/picture_crop_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/confirmed"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/font_color"
+        android:text="确定"
+        android:background="@drawable/picturecrop_button_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

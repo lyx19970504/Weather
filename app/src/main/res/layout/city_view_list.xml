@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        style="@style/DiagToolbar"
+        android:background="@color/bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/turn_left"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search_view"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                app:queryHint="搜索城市实景"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/topic_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconifiedByDefault="false"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:scrollbars="none"
+            android:id="@+id/province_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3">
+        </ListView>
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:background="@color/view_color"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <include layout="@layout/city_container_layout"/>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

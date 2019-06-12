@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:background="#FFC9F2C9"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <TextView
+            android:id="@+id/exit"
+            android:textColor="@color/font_color"
+            android:layout_margin="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:text="退出"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/portrait"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/huaji"
+            android:layout_width="64dp"
+            android:layout_height="64dp" />
+
+        <LinearLayout
+            android:id="@+id/linear_msg"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/login_button"
+            android:textColor="@android:color/white"
+            android:text="登录"
+            android:background="@drawable/login_register"
+            android:layout_width="64dp"
+            android:layout_height="36dp"/>
+
+        <Button
+            android:id="@+id/register_button"
+            android:textColor="@android:color/white"
+            android:text="注册"
+            android:background="@drawable/login_register"
+            android:layout_marginLeft="20dp"
+            android:layout_width="64dp"
+            android:layout_height="36dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:alpha="0.3"
+        android:layout_below="@+id/relative_layout"
+        android:id="@+id/white_line"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <com.jkb.slidemenu.SlideMenuLayout
+        app:contentAlpha="1.0"
+        app:contentToggle="true"
+        app:parallax="true"
+        app:slideMode="both"
+        app:allowDragging="false"
+        android:layout_below="@+id/white_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TabLayout
+                android:background="#FFC9F2C9"
+                app:tabGravity="fill"
+                app:tabIndicatorHeight="2.5dp"
+                app:tabMode="fixed"
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.design.widget.TabLayout>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </com.jkb.slidemenu.SlideMenuLayout>
+</RelativeLayout>

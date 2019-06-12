@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        style="@style/DiagToolbar"
+        android:background="@color/bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+        <LinearLayout
+            android:id="@+id/search_cityView"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/topic_search"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/search"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <TextView
+                android:textSize="20sp"
+                android:alpha="0.6"
+                android:layout_marginStart="8dp"
+                android:text="搜索城市实景"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/topic_list"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">环保地图</string>
+    <string name="weather">天气</string>
+    <string name="map">地图</string>
+    <string name="topic">话题</string>
+    <string name="myinfo">我的</string>
+</resources>

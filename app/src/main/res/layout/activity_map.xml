@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:background="@color/bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/search"
+                android:src="@drawable/search"
+                android:layout_alignParentStart="true"
+                android:layout_width="26dp"
+                android:layout_height="26dp" />
+            <LinearLayout
+                android:id="@+id/position"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/position"
+                    android:layout_width="24sp"
+                    android:layout_height="24sp" />
+                <TextView
+                    android:id="@+id/present_location"
+                    android:textSize="24sp"
+                    android:text="全国"
+                    android:textColor="@color/font_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <com.jkb.slidemenu.SlideMenuLayout
+        app:contentAlpha="1.0"
+        app:contentToggle="true"
+        app:parallax="true"
+        app:slideMode="both"
+        app:allowDragging="false"
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:background="#FFC8F1C8"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="2.5dp"
+            app:tabMode="fixed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.design.widget.TabLayout>
+            <com.fafu.polutionrepo.finished.View.MyViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.fafu.polutionrepo.finished.View.MyViewPager>
+        </LinearLayout>
+    </com.jkb.slidemenu.SlideMenuLayout>
+
+</RelativeLayout>

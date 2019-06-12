@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/back_login"
+            android:src="@drawable/back_login_selector"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:transitionName="share"
+            android:layout_marginTop="50dp"
+            android:id="@+id/image_location"
+            android:src="@drawable/icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/image_location"
+            android:textSize="40sp"
+            android:text="注册"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow android:gravity="center">
+            <TextView
+                android:textStyle="bold"
+                android:gravity="right"
+                android:text="用户名:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/register_username"
+                android:hint="请输入用户名"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TextView
+            android:id="@+id/register_username_error"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TableRow android:gravity="center">
+            <TextView
+                android:textStyle="bold"
+                android:gravity="right"
+                android:text="密码:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/register_password"
+                android:hint="请输入密码"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TextView
+            android:id="@+id/register_password_error"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TableRow android:gravity="center">
+            <TextView
+                android:textStyle="bold"
+                android:gravity="right"
+                android:text="手机:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/register_phone"
+                android:hint="请输入手机号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TextView
+            android:id="@+id/register_phone_error"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TableRow android:gravity="center">
+            <TextView
+                android:textStyle="bold"
+                android:gravity="right"
+                android:text="邮箱:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/register_mail"
+                android:hint="请输入邮箱"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TextView
+            android:id="@+id/register_mail_error"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TableRow android:gravity="center">
+            <TextView
+                android:textStyle="bold"
+                android:gravity="right"
+                android:text="出生年月:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/birthday"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#FFF46F6F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TextView
+            android:id="@+id/register_birthday_error"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:background="@drawable/register_button"
+        android:text="注册"
+        android:textColor="@drawable/text_color_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="finishedRegister"/>
+</LinearLayout>

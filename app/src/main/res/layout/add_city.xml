@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/add_city">
+    <android.support.v7.widget.Toolbar
+        android:background="#20FFFFFF"
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/turn_left"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size" />
+        <TextView
+            android:textColor="@color/font_color"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="管理城市"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_marginTop="5dp"
+        android:id="@+id/whiteLine"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar"
+        android:layout_width="match_parent"
+    android:layout_height="1dp"/>
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_margin="5dp"
+        android:background="@drawable/search_shape"
+        app:layout_constraintTop_toBottomOf="@+id/whiteLine"
+        app:queryHint="搜索城市(中文/拼音)"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintCircleRadius="8dp"
+        app:iconifiedByDefault="false">
+    </android.support.v7.widget.SearchView>
+    <TextView
+        android:id="@+id/text"
+        android:background="#20FFFFFF"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:textColor="#FFFFFFFF"
+        android:text="推荐城市"
+        android:textSize="10dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/search_view"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        android:id="@+id/city_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+    <ListView
+        android:id="@+id/list_view"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</android.support.constraint.ConstraintLayout>

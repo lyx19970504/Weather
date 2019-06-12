@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:divider="@drawable/spacer_medium"
+    android:showDividers="middle"
+    android:gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/week_view"
+        android:textSize="@dimen/basic_size"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textColor="@color/font_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/font_color"
+        android:id="@+id/date_view"
+        android:textSize="@dimen/basic_size"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/condition_day"
+        android:textSize="@dimen/basic_size"
+        android:textStyle="bold"
+        android:textColor="@color/font_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/condition_image_day"
+        android:layout_width="@dimen/forecast_image_size"
+        android:layout_height="@dimen/forecast_image_size" />
+    <com.fafu.polutionrepo.finished.View.TemperatureMaxMinView
+        android:id="@+id/temp_max_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:id="@+id/condition_night_image"
+        android:layout_width="@dimen/forecast_image_size"
+        android:layout_height="@dimen/forecast_image_size" />
+    <TextView
+        android:id="@+id/condition_night"
+        android:textColor="@color/font_color"
+        android:textSize="@dimen/basic_size"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/wind_direction_item"
+        android:textColor="@color/font_color"
+        android:textSize="@dimen/basic_size"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/wind_speed"
+        android:textColor="@color/font_color"
+        android:textSize="@dimen/basic_size"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        style="@style/DiagToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <RelativeLayout
+            android:background="@color/bottom_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_marginStart="16dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/turn_left"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textColor="@color/font_color"
+                android:textSize="16sp"
+                android:layout_centerInParent="true"
+                android:text="地表水详情"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/table"
+        android:orientation="vertical"
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:background="@color/view_color"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"/>
+        <RelativeLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/position_info"
+                android:text="位置信息:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_below="@+id/position_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/longitude"
+                    android:text="经度:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/latitude"
+                    android:layout_marginStart="12dp"
+                    android:text="纬度:"
+                    android:layout_below="@+id/position_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/topic_button"
+                android:textStyle="bold"
+                android:textColor="@color/font_color"
+                android:text="发布话题"
+                android:background="@drawable/picturecrop_button_shape"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="108dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/focus_button"
+                android:textStyle="bold"
+                android:textColor="@color/font_color"
+                android:text="关注"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/focus_no_pressed"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/view_color"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"/>
+        <TextView
+            android:alpha="0.6"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            android:text="基本信息"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/view_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/location_city"
+            android:text="所在城市:"
+            android:layout_margin="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/view_color"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"/>
+        <TextView
+            android:alpha="0.6"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            android:text="最近检测结果"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/view_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/pollution_time"
+            android:text="数据时间:  "
+            android:layout_margin="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="污染类别:"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/pollution_type"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_margin="12dp"
+                android:id="@+id/pollution_icon"
+                android:layout_gravity="center"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="受污染等级:"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/pollution_level"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_margin="12dp"
+                android:id="@+id/pollution_level_icon"
+                android:layout_gravity="center"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+        </LinearLayout>
+        <View
+            android:background="@color/view_color"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"/>
+        <TextView
+            android:alpha="0.6"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            android:text="报表详情"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/view_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:id="@+id/table_button"
+            android:textStyle="bold"
+            android:textColor="@color/font_color"
+            android:text="申请报表"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/focus_no_pressed"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</RelativeLayout>

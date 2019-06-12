@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/weather"
+        android:title="@string/weather"
+        android:icon="@drawable/weather"/>
+    <item android:id="@+id/map"
+        android:title="@string/map"
+        android:icon="@drawable/map"/>
+    <item android:id="@+id/topic"
+        android:title="@string/topic"
+        android:icon="@drawable/topic_layout"/>
+    <item android:id="@+id/myInfo"
+        android:title="@string/myinfo"
+        android:icon="@drawable/myinfo"/>
+</menu>

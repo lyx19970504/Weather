@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fafu.polutionrepo.finished">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+
+
+    <application
+        android:name=".Application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/weather_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="5f2333b3975feb785d6d59a4ab8277f4" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:theme="@style/main_bg">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.ChooseCityActivity">
+
+        </activity>
+        <activity android:name=".Activities.AddCityActivity">
+
+        </activity>
+        <activity android:name=".Activities.LoginActivity">
+
+        </activity>
+
+        <activity android:name=".Activities.RegisterActivity">
+
+        </activity>
+        <activity android:name=".Activities.UpdateNickNameActivity">
+
+        </activity>
+        <activity android:name=".Activities.MyDetailInfoActivity">
+
+        </activity>
+        <activity android:name=".Activities.PictureCropActivity"/>
+        <activity android:name=".Activities.TestActivity">
+
+        </activity>
+        <activity android:name=".Activities.CityListActivity">
+
+        </activity>
+        <activity android:name=".Activities.PollutionDetailedActivity">
+
+        </activity>
+        <activity android:name=".Activities.SearchCityViewActivity"/>
+        <activity android:name=".Activities.CityViewActivity"/>
+        <activity android:name=".Activities.CityImageDetailActivity" android:windowSoftInputMode="adjustResize|stateHidden">
+
+        </activity>
+        <activity android:name=".Activities.TopicDetailedActivity" android:windowSoftInputMode="adjustResize|stateHidden">
+
+        </activity>
+        <activity android:name=".Activities.PollutionActivity">
+
+        </activity>
+
+
+        <service android:name="com.amap.api.location.APSService" /> <!-- open the locating service -->
+        <service android:name=".Service.AutoUpdateService"/>
+        <provider
+            android:authorities="com.fafu.polutionrepo.finished.fileprovider"
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+    </application>
+
+</manifest>
