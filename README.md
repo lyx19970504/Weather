@@ -4,8 +4,7 @@
 本人只是个学生，水平不够，许多东西还在学习，如果有什么建议的话，感激不尽
 使用了挺多第三方库，欢迎讨论，qq:1424549271
 
+<img src="https://github.com/lyx19970504/Weather/blob/master/images/Screenshot_2019-06-19-15-35-39-466_com.fafu.polut.png" width="300" height="450"/>
 
-(https://github.com/lyx19970504/Weather/blob/master/images/Screenshot_2019-06-19-15-35-39-466_com.fafu.polut.png)
 
-(https://github.com/lyx19970504/Weather/blob/master/images/Screenshot_2019-06-19-15-35-39-466_com.fafu.polut.png)
 
