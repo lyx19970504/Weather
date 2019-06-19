@@ -6,5 +6,7 @@
 
 <img src="https://github.com/lyx19970504/Weather/blob/master/images/Screenshot_2019-06-19-15-35-39-466_com.fafu.polut.png" width="360" height="640"/>
 
+<img src="https://github.com/lyx19970504/Weather/blob/master/images/Screenshot_2019-06-19-15-35-39-466_com.fafu.polut.png" width="360" height="640"/>
+
 
 
